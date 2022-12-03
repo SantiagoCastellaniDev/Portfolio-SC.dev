@@ -1,0 +1,48 @@
+<div class="all">
+    <section class="estrellas">    
+        <div class="contiene row d-flex justify-content-center align-items-center">
+            <div class="cuadro seccion col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card-body p-8 text-center">
+                    <div class="">  
+                        <h2 class="fw-bold text-uppercase">LogOut</h2>
+                        <p class="magic1 text-50 mb-5">Portfolio</p>
+                        <h3>¿Desea cerrar sesion?</h3>
+                        <button class="boton btn btn-outline-light btn-lg px-5" type="submit">Cerrar Sesión</button>
+                    </div>  
+                    <div class="magic5">
+                        <a routerLink="/portfolio">Cancelar</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    
+        <ng-template #loggedOut>
+            <div class="contiene row d-flex justify-content-center align-items-center">
+                <div class="cuadro seccion col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card-body p-8 text-center">
+                        <h2 class="fw-bold text-uppercase">LOGIN</h2>
+                        <p class="magic1 text-50 mb-5">Portfolio</p>
+                        <form  novalidate>
+                            <div class="form-group">
+                                <label for="nombreUsuario">Nombre de Usuario</label>
+                                <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control"required>                                
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña</label>
+                                <input type="password" name="password" id="password" class="form-control"required>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-outline-success btn-block" >
+                                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión</button>
+                            </div>
+                            <div class="magic5">
+                                <a routerLink="/portfolio">Cancelar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </section>    
+</div>
+

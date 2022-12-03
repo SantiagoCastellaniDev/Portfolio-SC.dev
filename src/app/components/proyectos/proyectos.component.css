@@ -1,0 +1,135 @@
+/*---PROYECTOS---*/   
+
+/*-----Detalles de titulo-------*/
+.titular {
+    color:yellow;
+}
+.titular:after {
+    background: purple;
+}
+
+h3 {
+    display: inline;
+}
+
+/*---------CONTENEDOR DE PROYECTOS-------*/
+
+app-boton-editar, app-boton-borrar {
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.proyecto {
+    position:relative;
+    margin:0 auto 30px auto;
+    overflow:hidden;
+    background: black;
+    height:auto;
+    color:white;
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.data-proyecto {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    margin-left:300px; 
+    padding:15px;
+    text-align: left;
+    color: white;
+}
+
+p {
+    color:#74808a;
+    margin:0 0 15px 0;
+    font-size:0.9em
+}
+
+/* Imagen de proyecto */
+
+.img-project {
+    display:inline-block;
+    max-width:300px;
+    margin-top:15px;
+    margin-bottom:9px;
+}
+
+
+.info-project {
+    padding:10px;
+    color: white;
+}
+
+
+/*ESTILOS DE MODALES DE EDICION*/
+
+.modal-content {    
+    border-bottom:4px solid red;
+    border-left:4px solid orange;
+    border-top:4px solid yellow;
+    border-right:4px solid green;  
+}
+
+.modal-editar {
+    background: rgb(197, 197, 21);  
+}
+
+.modal-agregar {
+    background: orangered;  
+}
+
+.modal-borrar {
+    background: grey;  
+}
+
+
+.modal-header h5{
+    color:blue;
+    font-size: 30px;
+}
+
+.form-control {
+    background-color: white;
+    color: grey;
+}
+
+.form-control:focus {
+    background-color: white;
+    color: black;
+}
+
+label {
+    margin-top:15px;
+    margin-bottom: 2px;
+}
+.modal-footer {
+    display: inline;
+}
+.modal-footer button {
+    margin: 25px
+}
+
+.btn-primary {
+    float: left
+}
+.btn-secondary {
+    float:right;
+}
+
+.enlace {
+    text-decoration: none;
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+    .img-project{width:200px;height:auto}
+}
+
+
+@media only screen and (max-width: 385px) {
+    .img-project{width:135px;height:auto}
+}

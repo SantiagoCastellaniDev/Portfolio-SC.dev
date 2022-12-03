@@ -1,0 +1,41 @@
+<!-------BARRA LATERAL------->
+
+<aside>
+    <!--------BOTON OPEN SIDEBAR------>
+    <div class="btn-sidebar fixed-top">
+        <button class="boton-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><fa-icon [icon]="faBars"></fa-icon></button>    
+    </div>
+    <!--------SIDEBAR-------->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-dismiss="offcanvas" data-bs-backdrop="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <img id="foto-sidebar" src="../../../assets/images/aside.jpg" alt="">
+        </div>
+        <div class="offcanvas-body" id="barra-lateral">
+            <ul>
+                <li>
+                    <a (click)="scrollTo('navegacion')" id="li-home"><fa-icon class="simbol" [icon]="faHome"></fa-icon>HOME</a>
+                </li>
+                <li>
+                    <a (click)="scrollTo('acerca-de')" id="li-acerca-de"><fa-icon class="simbol" [icon]="faSeedling"></fa-icon>SOBRE MI</a>
+                </li>
+                <li>
+                    <a (click)="scrollTo('experiencia')" id="li-experiencia"><fa-icon class="simbol" [icon]="faSplotch"></fa-icon>EXPERIENCIA</a>
+                </li>
+                <li>
+                    <a (click)="scrollTo('educacion')" id="li-educacion"><fa-icon class="simbol" [icon]="faBookOpen"></fa-icon>EDUCACION</a>
+                </li>
+                <li>
+                    <a (click)="scrollTo('proyectos')" id="li-proyectos"><fa-icon class="simbol" [icon]="faLaptopCode"></fa-icon>PROYECTOS</a>
+                </li>
+                <li>
+                    <a (click)="scrollTo('skills')" id="li-skills"><fa-icon class="simbol" [icon]="faCube"></fa-icon>HERRAMIENTAS</a>
+                </li>
+                <li>
+                    <a (click)="scrollTo('contacto')" id="li-contacto"><fa-icon class="simbol" [icon]="faCommentAlt"></fa-icon>CONTACTO</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</aside>
+

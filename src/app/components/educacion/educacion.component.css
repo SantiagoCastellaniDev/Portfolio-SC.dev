@@ -1,0 +1,156 @@
+/*-----EDUCACION--------*/
+
+
+/*-------Detalles del titulo-------*/
+
+.titular {
+    color: green; 
+}
+
+.titular:after {
+    background:yellow;
+}
+
+/*-----------BLOQUE EDUCATIVO------------*/
+
+article {
+    background: black;
+    height: max-content;
+    text-align:center;
+    justify-content: center;
+    padding: 0 auto;
+    padding-right: 25px;
+    border: 1px solid grey;
+    margin:0 auto;
+    margin-top: 15px;
+}
+
+.data-educacion {
+    text-align: left;
+    color: grey;
+    display:inline-block;
+    justify-content: center;
+    padding: 0 auto;
+}
+
+article h3 {
+    font-size: 20px;
+    margin:0;
+    color:white;
+    padding:0;
+}
+
+article h6 {
+    font-size: 15px;
+    padding: 0;
+    margin:0;
+}
+
+article h4 {
+    font-size: 15px;
+    padding:0 auto;
+    margin:0 auto;
+}
+
+article p {
+    font-size: 15px;
+    padding:0 auto;
+    margin:0 auto;
+}
+
+.imagen-logo {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    margin:0 auto;
+    padding-top:5px;
+    padding-right:15px;
+    padding-bottom:5px;
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+app-boton-editar, app-boton-borrar {
+    padding-right: 50px;
+    margin-right: 25px;
+    
+}
+
+/*ESTILOS DE MODALES DE EDICION*/
+
+
+.modal-content {    
+    border-bottom:4px solid red;
+    border-left:4px solid orange;
+    border-top:4px solid yellow;
+    border-right:4px solid green;  
+}
+
+.modal-editar {
+    background: rgb(197, 197, 21);  
+}
+
+.modal-agregar {
+    background: orangered;  
+}
+
+.modal-borrar {
+    background: grey;  
+}
+
+
+
+
+.modal-header h5{
+    color:blue;
+    font-size: 30px;
+}
+
+.form-control {
+    background-color: white;
+    color: grey;
+}
+
+.form-control:focus {
+    background-color: white;
+    color: black;
+}
+
+label {
+    margin-top:15px;
+    margin-bottom: 2px;
+}
+.modal-footer {
+    display: inline;
+}
+.modal-footer button {
+    margin: 25px
+}
+
+.btn-primary {
+    float: left
+}
+.btn-secondary {
+    float:right;
+}
+
+
+@media only screen and (max-width: 580px) {
+    .data-educacion,.botones {
+        text-align:center;
+    }
+    app-boton-editar, app-boton-borrar {
+        padding: 5px;
+        margin:5px;        
+    }
+    .imagen-logo {
+        margin-top: 19px;
+    }
+}

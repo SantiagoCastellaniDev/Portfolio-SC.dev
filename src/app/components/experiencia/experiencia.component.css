@@ -1,0 +1,134 @@
+/*--------EXPERIENCIA-------*/
+
+/*----Detalles del TITULO------*/
+.titulo-seccion {
+    margin-bottom: 0;
+}
+
+.titular {
+    color: lightseagreen; 
+}
+
+.titular:after {    
+    background: orange;
+}
+
+/*-----------Bloques educativos----------*/
+.row {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding:0px 0px;
+    justify-content: center;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.imagen-experiencia {
+    max-width:100px;
+    height:50px;
+    margin-top:15px;
+    margin-bottom:9px;
+    display: inline-block;
+}
+
+hr {
+    border: 1px solid white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.data-experiencia {
+    text-align:left;
+    margin: 0 auto;
+    padding:0 auto;
+}
+
+h3 {
+    font-size: 20px;
+    margin:0;
+    padding:0;
+}
+
+.data-experiencia h6 {
+    font-size: 15px;
+    padding: 0;
+    margin:0;
+    color:grey;
+}
+
+.data-experiencia h4 {
+    font-size: 15px;
+    padding:0 auto;
+    margin:0 auto;
+    color:grey;
+}
+
+.data-experiencia p {
+    font-size: 15px;
+    padding:0 auto;
+    margin:0 auto;
+    color:grey;
+}
+
+/*ESTILOS DE MODALES DE EDICION*/
+
+
+.modal-content {    
+    border-bottom:4px solid red;
+    border-left:4px solid orange;
+    border-top:4px solid yellow;
+    border-right:4px solid green;  
+}
+
+.modal-editar {
+    background: rgb(197, 197, 21);  
+}
+
+.modal-agregar {
+    background: orangered;  
+}
+
+.modal-borrar {
+    background: grey;  
+}
+
+
+.modal-header h5{
+    color:blue;
+    font-size: 30px;
+}
+
+.form-control {
+    background-color: white;
+    color: grey;
+}
+
+.form-control:focus {
+    background-color: white;
+    color: black;
+}
+
+label {
+    margin-top:15px;
+    margin-bottom: 2px;
+}
+.modal-footer {
+    display: inline;
+}
+.modal-footer button {
+    margin: 25px
+}
+
+.btn-primary {
+    float: left
+}
+.btn-secondary {
+    float:right;
+}
+
+@media only screen and (max-width: 800px) {
+    .data-experiencia {
+        text-align:center;
+    }
+}

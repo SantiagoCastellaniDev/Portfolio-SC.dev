@@ -1,0 +1,28 @@
+<!---------SECCION EXPERIENCIA---------------->
+
+<section  id="experiencia" class="recuadro">
+    <div class="container-fluid seccion">
+        <!---Titulo de seccion y BOTON AGREGAR------>
+        <div class="titulo-seccion">
+            <h2 class="titular">Experiencia</h2>
+        </div>
+        <!----------BLOQUE DE EXPERIENCIAS-------->
+        <hr>
+        <div class="row" *ngFor="let item of data">         
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                <img class="imagen-experiencia" [src]="item.img" alt="">
+            </div>
+            <div class="data-experiencia col-xs-8 col-sm-8 col-md-9">
+                <h3>{{item.titulo}}</h3>
+                <h6>{{item.fecha}}</h6>
+                <h4>{{item.empresa}}</h4>
+                <p>{{item.descripcion}}</p>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-1">
+                
+            </div>
+            <hr>
+        </div>
+    </div>
+</section>
+

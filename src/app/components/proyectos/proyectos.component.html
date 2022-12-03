@@ -1,0 +1,38 @@
+<!---------SECCION PROYECTOS------------>
+
+<section id="proyectos" class="recuadro">
+    <div class="container-fluid seccion">
+        <!------Titulo de seccion y boton agregar-->
+        <div class="titulo-seccion">
+            <h2 class="titular">Proyectos</h2>
+        </div>
+        
+
+        <!-----BLOQUE DE PROYECTOS------>
+
+        <div class="container" *ngFor="let item of data">
+            <hr>
+            <div class="">
+                <div class="row">
+                    <!----Imagen de proyecto---->
+                    <div class="container">
+                        <img class="img-project" [src]="item.img"/>
+                    </div>     
+                    <!----Informacion de proyecto---->            
+                    <div class="info-project container col-xs-12 col-sm-6 col-md-8">                                                     
+                        <h3><b>{{item.nombre}}</b></h3>                                                    
+                        <br>
+                        <span>{{item.fecha}}</span>
+                        <h4>{{item.puesto}}</h4>
+                        <p>{{item.descripcion}}</p>
+                        <a class="enlace" [href]="item.url" target="blanck">Ver Proyecto</a>
+                    </div>                                     
+                </div>
+            </div>
+            <div class=""></div>                
+            <hr>
+        </div>            
+
+
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<!-------SECCION EDUCACION--------->
+
+<section id="educacion" class="recuadro">
+    <div class="container-fluid seccion">
+        <!---Titulo de seccion y BOTON AGREGAR------>
+        <div class="titulo-seccion">
+           <h2 class="titular">Educación</h2>
+        </div>
+        
+        <!----BLOQUE EDUCATIVO----->
+        <article class="container bloque-educativo" *ngFor="let item of data">
+            <div class="row" >
+                <div class="col-xs-2 col-sm-2 col-md-2">
+                    <img class="imagen-logo" [src]="item.img" alt="">
+                </div>
+                <div class="container data-educacion col-xs-8 col-sm-8 col-md-8">
+                    <h3>{{item.titulo}}</h3>                    
+                    <span>{{item.fecha}}</span>
+                    <h4>{{item.institucion}}</h4>
+                    <p>{{item.descripcion}}</p>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<!-------------------------------->

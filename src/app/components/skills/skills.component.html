@@ -1,0 +1,101 @@
+<!---------SECCION SKILLS-------------->
+
+<section id="skills" class="recuadro">
+    <div class="container-fluid seccion">
+      <!-------TITULO DE SECCION------->
+      <div class="titulo-seccion">
+        <h2 class="titular">Habilidades</h2>
+      </div>
+      <!------------------->      
+      <hr>
+      <!--------Hard Skills--------------------->
+      <div  id="hard-skills">
+        <h4>Hard Skills / Tecnologías</h4>          
+      </div>
+        <!------------------------->      
+      <div class="row container-fluid" *ngFor="let skill of datosSkills">
+        <div class="skills col-xs-10 col-md-5">
+          <span><i class="{{skill.img_Skill}}"[ngStyle]="{'color': skill.colorSkill}"></i></span>
+          <span [style.color]="skill.colorSkill">{{skill.nombreSkill}}</span>
+          <div class="btn-edicion">            
+          </div> 
+          <div class="progress">               
+            <div class="progress-bar bg-{{skill.colorSkill}}" role="progressbar" [ngStyle]="{'width':skill.porcentajeSkill+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{skill.nivelSkill}}</div>
+          </div>
+        </div>
+      </div> 
+      
+      <hr>
+
+      <!------------Soft Skills---------------->
+
+      <div  id="soft-skills">
+        <!-----(a futuro se implementara la creacion, edicion y eliminacion de las soft skills)
+          <app-boton-agregar></app-boton-agregar>
+         -->
+          <h4>Soft Skills / Cualidades</h4>          
+      </div>
+        <!------------------------->
+      <div class="row container-fluid">
+          <!-----------Trabajo en equipo------------->
+          <div class="skills col-9">
+            <div class="nombre-habilidad">
+              <span>Trabajo en equipo</span>
+              <div class="btn-edicion">
+                <!-----
+                <app-boton-editar></app-boton-editar>
+                <app-boton-borrar></app-boton-borrar> 
+                --->
+              </div>            
+            </div>
+            <div class="progress">               
+              <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>            
+          </div>
+          <!-------------Cualidad 2------------->
+          <div class="skills col-9">
+            <span>Comunicación efectiva</span>
+            <div class="btn-edicion">
+              <!------
+              <app-boton-editar></app-boton-editar>
+              <app-boton-borrar></app-boton-borrar> 
+              --->
+            </div> 
+            <div class="progress">               
+              <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <!-----------Cualidad 3-------->
+          <div class="skills col-9">
+            <span>Resiliencia</span>
+            <div class="btn-edicion">
+              <!------
+              <app-boton-editar></app-boton-editar>
+              <app-boton-borrar></app-boton-borrar>
+              ---> 
+            </div> 
+            <div class="progress">               
+              <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <!------------Cualidad 4--------->
+          <div class="skills col-9">
+            <span>Resolución de problemas</span>
+            <div class="btn-edicion">
+              <!------
+              <app-boton-editar></app-boton-editar>
+              <app-boton-borrar></app-boton-borrar> 
+              --->
+            </div> 
+            <div class="progress">               
+              <div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>          
+      </div>    
+      <!---------------------------------------------------------->
+      <hr>        
+    </div>    
+</section>
+
+<!-------------------------------->
+

@@ -1,0 +1,23 @@
+
+#btn-login {
+  color: white;
+  background:orange;
+  border-radius: 100%;
+  margin-left: 3px;
+  margin-right: 57px;
+}
+
+#btn-logout {
+  color: white;
+  background:green;
+  border-radius: 100%;
+  margin-left: 3px;
+  margin-right: 57px;
+}
+
+
+
+#btn-login:hover, #btn-logout:hover {
+  color: black;
+  background: yellow;
+}
