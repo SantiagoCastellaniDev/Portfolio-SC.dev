@@ -26,6 +26,14 @@ export class ProyectosComponent implements OnInit {
       url:"https://santiagocastellani-dev.vercel.app"
     },
     {
+      nombre:"Charta",
+      fecha:"(Noviembre 2022)",
+      puesto:"Frontend Developer Angular",
+      descripcion:"App de administración de gastos e ingresos, visualización de balances y estadísticas. Desarrollado en equipo de emulación laboral para NoCountry.",
+      img:"../../../assets/images/dashboard-gastos.png",
+      url:"https://thatischarta.vercel.app/"
+    },
+    {
       nombre:"Pokemoncillos",
       fecha:"(2022)",
       puesto:"Desarrollador WEB",
@@ -48,8 +56,7 @@ export class ProyectosComponent implements OnInit {
       descripcion:"Práctica de animaciones. Juego de acertijos y desafios",
       img:"../../../assets/images/misterio2.png",
       url:"https://misterio2.netlify.app/"
-    },
-
+    }
   ] 
 
   constructor() { }
